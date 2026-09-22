@@ -1,6 +1,6 @@
 # PLAN DE CALIDAD DEL PROYECTO
 
-[![Plan de Calidad](https://img.shields.io/badge/Plan%20de%20Calidad-Proyecto-blue)](./PLAN-CALIDAD.md)
+[![Plan de Calidad](https://img.shields.io/badge/Plan%20de%20Calidad-Proyecto-blue)](./PLAN_CALIDAD.md)
 
 ## Gestión de Proyectos de Software
 
@@ -55,7 +55,7 @@ Establecer los criterios, métricas, actividades y responsabilidades necesarias 
 
 | Archivo / Carpeta                      | Descripción                                                     |
 | -------------------------------------- | --------------------------------------------------------------- |
-| [`PLAN-CALIDAD.md`](./PLAN_CALIDAD.md) | Plan de Calidad completo del proyecto                           |
+| [`PLAN_CALIDAD.md`](./PLAN_CALIDAD.md) | Plan de Calidad completo del proyecto                           |
 | `evidencias/`                          | Evidencias relacionadas con el cumplimiento del Plan de Calidad |
 
 ---
