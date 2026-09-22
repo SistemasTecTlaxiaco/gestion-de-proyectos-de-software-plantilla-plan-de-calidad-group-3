@@ -2,17 +2,18 @@
 
 ## Sistema de Gestión Comercial para Artesanías de Olla de Barro y Canastas Tejidas a Mano
 
-**Instituto Tecnológico de Tlaxiaco**
-**Ingeniería en Sistemas Computacionales**
+**Instituto:** Instituto Tecnológico de Tlaxiaco
+**Carrera:** Ingeniería en Sistemas Computacionales
 **Asignatura:** Gestión de Proyectos de Software
 **Grupo:** 7US
-
 **Docente:** Ing. Roman Cruz José Alfredo
 
 ### Integrantes
 
-* Sandoval Hernández Edgar Axel – 22620093
-* Adriana Hernández Martínez – 22620083
+| Nombre                        | Número de control |
+| ----------------------------- | ----------------- |
+| Sandoval Hernández Edgar Axel | 22620093          |
+| Adriana Hernández Martínez    | 22620083          |
 
 **Lugar y fecha:** Tlaxiaco, Oax., a 11 de septiembre de 2026.
 
@@ -20,15 +21,11 @@
 
 # 1. Introducción
 
-El presente Plan de Calidad establece los criterios, procedimientos, métricas y actividades que se utilizarán para asegurar la calidad del **Sistema de Gestión Comercial para Artesanías de Olla de Barro y Canastas Tejidas a Mano**.
+El presente Plan de Calidad tiene como finalidad establecer los criterios, actividades, métricas y responsabilidades que se utilizarán para asegurar la calidad del **Sistema de Gestión Comercial para Artesanías de Olla de Barro y Canastas Tejidas a Mano**.
 
-El proyecto tiene como propósito apoyar a los artesanos de la región Mixteca mediante una herramienta digital que permita organizar información de productos, controlar inventarios, registrar ventas y generar información útil para la comercialización de sus productos.
+El sistema está orientado a apoyar a los artesanos de la Región Mixteca, principalmente en el registro de productos, control de inventario, registro de ventas y generación de información que permita conocer el comportamiento de sus actividades comerciales.
 
-Debido a las condiciones que pueden presentarse en algunas comunidades de la región, como conectividad limitada, recursos tecnológicos reducidos y diferentes niveles de experiencia en el uso de herramientas digitales, el sistema debe considerar principalmente la **usabilidad, rendimiento, confiabilidad, seguridad, accesibilidad y mantenibilidad**.
-
-Para estructurar el Plan de Calidad se consideran principios de **CMMI y MoProSoft**, adaptándolos al tamaño, alcance y necesidades del proyecto **Open Hub Tec**. Además, se utilizarán herramientas de **Inteligencia Artificial** como apoyo para la revisión de historias de usuario, criterios de aceptación, métricas y posibles riesgos de calidad.
-
-El plan también contempla el análisis del **Costo de la Calidad (CoQ)** para identificar cuánto esfuerzo requiere prevenir problemas y cuánto esfuerzo podría ser necesario para corregirlos posteriormente.
+El plan considera aspectos como usabilidad, rendimiento, confiabilidad, seguridad, mantenibilidad, accesibilidad y adaptación al contexto regional. También se integran prácticas de **CMMI**, **MoProSoft**, eduScrum y auditoría mediante Inteligencia Artificial (IA).
 
 ---
 
@@ -36,336 +33,308 @@ El plan también contempla el análisis del **Costo de la Calidad (CoQ)** para i
 
 ## 2.1 Objetivo general
 
-Establecer un conjunto de criterios, métricas y procedimientos que permitan desarrollar un sistema de gestión comercial confiable, usable, seguro y mantenible, adaptado a las condiciones de los artesanos de la región Mixteca.
+Garantizar que el sistema cumpla con los requisitos establecidos y proporcione una solución funcional, confiable, segura y fácil de utilizar, considerando las condiciones tecnológicas y necesidades de los artesanos de la Región Mixteca.
 
 ## 2.2 Objetivos específicos
 
-### Confiabilidad
-
-* Mantener una disponibilidad objetivo del **99 %** durante los periodos en los que el sistema se encuentre habilitado para los usuarios.
-
-### Usabilidad
-
-* Diseñar interfaces sencillas que permitan registrar productos, consultar inventarios y registrar ventas sin requerir conocimientos técnicos avanzados.
-
-### Rendimiento
-
-* Procurar que las consultas principales del catálogo y del inventario tengan un tiempo de respuesta menor o igual a **2 segundos** en condiciones normales de operación.
-
-### Seguridad
-
-* Proteger la información de usuarios, productos, inventarios y ventas mediante controles de acceso, validación de datos y buenas prácticas de programación.
-
-### Mantenibilidad
-
-* Mantener código organizado, documentado y versionado en GitHub para facilitar futuras modificaciones y correcciones.
-
-### Accesibilidad
-
-* Diseñar interfaces que puedan utilizarse desde equipos con recursos limitados y considerando diferentes niveles de alfabetización digital.
-
-### Adaptación al contexto regional
-
-* Considerar las limitaciones de conectividad de algunas comunidades de la Mixteca, evitando depender de procesos que requieran constantemente grandes cantidades de datos.
+* **Confiabilidad:** Reducir errores y asegurar que la información registrada se conserve correctamente.
+* **Usabilidad:** Diseñar una interfaz sencilla y fácil de utilizar.
+* **Rendimiento:** Procurar tiempos de respuesta adecuados para las operaciones principales.
+* **Seguridad:** Proteger la información y evitar vulnerabilidades críticas.
+* **Mantenibilidad:** Mantener el código documentado y organizado para facilitar futuras modificaciones.
+* **Accesibilidad:** Permitir que diferentes usuarios puedan utilizar el sistema.
+* **Adaptación al contexto regional:** Considerar problemas como conectividad limitada, equipos de bajos recursos y diferentes niveles de conocimiento tecnológico.
 
 ---
 
 # 3. Alcance del Plan de Calidad
 
-El Plan de Calidad se aplicará a las principales funcionalidades contempladas en el Product Backlog:
+El Plan de Calidad comprende las actividades relacionadas con:
 
-* Catálogo digital de artesanías.
-* Registro y consulta de productos.
-* Control de inventario.
-* Registro de ventas.
-* Gestión de información de los artesanos.
-* Generación de reportes.
-* Registro de información para seguimiento del impacto.
-* Documentación y control del código fuente.
-* Pruebas funcionales y de usabilidad.
+* Análisis de requisitos.
+* Planeación del proyecto.
+* Desarrollo del sistema.
+* Pruebas funcionales y no funcionales.
 * Revisión de historias de usuario.
+* Revisión mediante IA.
+* Control de errores y defectos.
 * Control de versiones mediante GitHub.
-
-El plan será aplicado durante las etapas de **análisis, diseño, desarrollo, pruebas y revisión de los incrementos del proyecto**.
+* Documentación.
+* Evaluación de métricas de calidad.
+* Evidencias de pruebas y aceptación.
+* Revisión del cumplimiento de las historias de usuario.
 
 ---
 
 # 4. Criterios de Calidad
 
-| Criterio           | Objetivo                                       | Indicador                             | Meta         |
-| ------------------ | ---------------------------------------------- | ------------------------------------- | ------------ |
-| **Usabilidad**     | Facilitar el uso del sistema                   | Tareas completadas correctamente      | ≥ 90 %       |
-| **Rendimiento**    | Reducir tiempos de espera                      | Tiempo promedio de respuesta          | ≤ 2 segundos |
-| **Confiabilidad**  | Reducir errores durante la operación           | Casos exitosos                        | ≥ 95 %       |
-| **Seguridad**      | Proteger información                           | Vulnerabilidades críticas encontradas | 0            |
-| **Mantenibilidad** | Facilitar modificaciones                       | Incidencias de código documentadas    | 100 %        |
-| **Accesibilidad**  | Facilitar el uso por diferentes usuarios       | Funciones accesibles                  | ≥ 90 %       |
-| **Compatibilidad** | Permitir funcionamiento en equipos disponibles | Pruebas satisfactorias                | ≥ 95 %       |
+| Criterio       |                             Meta |
+| -------------- | -------------------------------: |
+| Usabilidad     |                           ≥ 90 % |
+| Rendimiento    |                     ≤ 2 segundos |
+| Confiabilidad  |                           ≥ 95 % |
+| Seguridad      |      0 vulnerabilidades críticas |
+| Mantenibilidad | 100 % de incidentes documentados |
+| Accesibilidad  |                           ≥ 90 % |
+| Compatibilidad |                           ≥ 95 % |
 
 ---
 
 # 5. Integración de CMMI y MoProSoft
 
-La aplicación de **CMMI y MoProSoft** no se realizará como una implementación completa de estos modelos, sino como una adaptación de sus prácticas al contexto académico y al tamaño del proyecto **Open Hub Tec**.
+Para fortalecer la calidad del proyecto se consideran prácticas de **CMMI** y procesos de **MoProSoft**.
 
-## 5.1 Aplicación de CMMI
+## 5.1 Prácticas consideradas de CMMI
 
-| Práctica                     | Aplicación en el proyecto                                                                                                      |
-| ---------------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
-| **Gestión de requisitos**    | Las historias de usuario se documentarán mediante el formato Como/Quiero/Para y criterios de aceptación.                       |
-| **Planificación**            | Las actividades se organizarán mediante el Product Backlog y el tablero eduScrum.                                              |
-| **Gestión de configuración** | El código y documentos importantes serán controlados mediante GitHub.                                                          |
-| **Medición y análisis**      | Se utilizarán métricas de calidad, tiempos de respuesta, errores y pruebas realizadas.                                         |
-| **Verificación**             | Cada funcionalidad será revisada mediante pruebas antes de considerarse terminada.                                             |
-| **Validación**               | Las historias de usuario serán comparadas con sus criterios de aceptación para comprobar que resuelvan la necesidad planteada. |
-| **Gestión de riesgos**       | Se identificarán riesgos relacionados con conectividad, seguridad, errores de datos y disponibilidad.                          |
+* Gestión de requisitos.
+* Planeación del proyecto.
+* Gestión de configuración.
+* Medición y análisis.
+* Verificación.
+* Validación.
+* Gestión de riesgos.
 
-## 5.2 Aplicación de MoProSoft
+## 5.2 Procesos considerados de MoProSoft
 
-| Categoría                       | Aplicación en el proyecto                                          |
-| ------------------------------- | ------------------------------------------------------------------ |
-| **Dirección**                   | Definición de objetivos y prioridades del proyecto.                |
-| **Gestión**                     | Organización de actividades, recursos, tiempos, riesgos y calidad. |
-| **Operación**                   | Desarrollo, integración, pruebas y entrega de las funcionalidades. |
-| **Administración de proyectos** | Seguimiento del Product Backlog, sprints y actividades del equipo. |
-| **Desarrollo y mantenimiento**  | Diseño, programación, pruebas y corrección de errores.             |
+* Dirección.
+* Gestión.
+* Operación.
+* Administración de proyectos.
+* Desarrollo y mantenimiento de software.
+
+La integración de estos modelos permite establecer una forma organizada de planear, desarrollar, revisar y mejorar el sistema.
 
 ---
 
-# 6. Relación con las Fases del Proyecto
+# 6. Relación entre las fases del proyecto y la calidad
 
-| Fase           | CMMI                      | MoProSoft  | Aplicación                          |
-| -------------- | ------------------------- | ---------- | ----------------------------------- |
-| **Análisis**   | Gestión de requisitos     | Desarrollo | Revisión de historias de usuario    |
-| **Planeación** | Planificación             | Gestión    | Organización del Sprint             |
-| **Desarrollo** | Gestión de configuración  | Desarrollo | Programación y control de versiones |
-| **Pruebas**    | Verificación y validación | Operación  | Ejecución de pruebas                |
-| **Revisión**   | Medición y análisis       | Gestión    | Evaluación de métricas              |
-| **Entrega**    | Validación                | Operación  | Revisión del incremento             |
+| Fase       | CMMI                      | MoProSoft                   | Aplicación en el proyecto                      |
+| ---------- | ------------------------- | --------------------------- | ---------------------------------------------- |
+| Análisis   | Gestión de requisitos     | Desarrollo                  | Identificación de necesidades de los artesanos |
+| Planeación | Planeación del proyecto   | Administración de proyectos | Definición de actividades y recursos           |
+| Desarrollo | Gestión de configuración  | Desarrollo y mantenimiento  | Elaboración del sistema                        |
+| Pruebas    | Verificación y validación | Desarrollo y mantenimiento  | Comprobación del funcionamiento                |
+| Revisión   | Medición y análisis       | Gestión                     | Evaluación de métricas y resultados            |
+| Entrega    | Validación                | Operación                   | Entrega de una versión funcional               |
 
 ---
 
 # 7. Historias de Usuario y Calidad
 
-Las principales historias de usuario consideradas para el análisis de calidad son:
+## HU-01: Catálogo de productos
 
-## HU-01. Catálogo digital
+**Como** artesano
+**Quiero** registrar y mostrar mis ollas de barro y canastas
+**Para** que los compradores puedan conocer los productos disponibles.
 
-**Como** artesano,
-**quiero** registrar y mostrar mis ollas de barro y canastas tejidas,
-**para** que los posibles compradores puedan consultar los productos disponibles.
+### Criterios de calidad
 
-## HU-02. Control de inventario
-
-**Como** artesano,
-**quiero** registrar las piezas disponibles y actualizar sus cantidades,
-**para** evitar errores en el inventario.
-
-## HU-03. Registro de ventas
-
-**Como** artesano,
-**quiero** registrar las ventas realizadas,
-**para** llevar un control de mis operaciones comerciales.
-
-## HU-04. Reportes e información de impacto
-
-**Como** responsable del proyecto,
-**quiero** generar información relacionada con productos, ventas e impacto,
-**para** facilitar el seguimiento y la transparencia del proyecto.
+* Registrar correctamente los datos del producto.
+* Permitir agregar imágenes.
+* Mostrar información clara.
+* Evitar pérdida de información.
+* Validar los datos antes de guardarlos.
 
 ---
 
-# 8. Análisis del Costo de la Calidad (CoQ)
+## HU-02: Control de inventario
 
-El Costo de la Calidad se analizará mediante la comparación entre el esfuerzo utilizado para prevenir y detectar errores y el esfuerzo estimado para corregirlos después de que ocurran.
+**Como** artesano
+**Quiero** controlar la cantidad de productos disponibles
+**Para** conocer mi inventario actual.
 
-Para este proyecto se utilizará la siguiente relación:
+### Criterios de calidad
+
+* Registrar entradas y salidas.
+* Actualizar las cantidades.
+* Evitar cantidades negativas.
+* Mostrar información actualizada.
+* Validar los datos registrados.
+
+---
+
+## HU-03: Registro de ventas
+
+**Como** artesano
+**Quiero** registrar mis ventas
+**Para** llevar un control de mis transacciones.
+
+### Criterios de calidad
+
+* Registrar correctamente cada venta.
+* Validar los datos de la transacción.
+* Evitar duplicidad de registros.
+* Proteger la información.
+* Actualizar el inventario después de una venta.
+
+---
+
+## HU-04: Reportes e impacto
+
+**Como** artesano
+**Quiero** consultar reportes de mis ventas e inventario
+**Para** conocer el comportamiento de mi actividad comercial.
+
+### Criterios de calidad
+
+* Mostrar información correcta.
+* Generar reportes comprensibles.
+* Utilizar los datos registrados en el sistema.
+* Permitir consultar información histórica.
+
+---
+
+# 8. Costo de la Calidad
+
+Para evaluar el esfuerzo de prevención y corrección se utilizarán las siguientes fórmulas:
 
 ### Índice de prevención/corrección
 
-**Índice de prevención/corrección = Horas de prevención ÷ Horas de corrección**
+**Índice = Horas de prevención ÷ Horas de corrección**
 
-También se calculará el ahorro potencial:
+### Ahorro potencial
 
 **Ahorro potencial = Horas de corrección − Horas de prevención**
-
-Un mayor ahorro potencial indica que las actividades preventivas pueden evitar una cantidad importante de trabajo posterior.
 
 ---
 
 # 9. Costo de Calidad por Historia de Usuario
 
-| ID        | Historia de Usuario   | Prevención / inspección | Corrección estimada | Relación P/C | Ahorro potencial |
-| --------- | --------------------- | ----------------------: | ------------------: | -----------: | ---------------: |
-| **HU-01** | Catálogo digital      |                     4 h |                10 h |         0.40 |              6 h |
-| **HU-02** | Control de inventario |                     5 h |                12 h |         0.42 |              7 h |
-| **HU-03** | Registro de ventas    |                     6 h |                15 h |         0.40 |              9 h |
-| **HU-04** | Reportes e impacto    |                     3 h |                 8 h |         0.38 |              5 h |
-| **Total** |                       |                **18 h** |            **45 h** |     **0.40** |         **27 h** |
+| Historia de Usuario | Horas de prevención | Horas de corrección |   Índice | Ahorro potencial |
+| ------------------- | ------------------: | ------------------: | -------: | ---------------: |
+| HU-01               |                 4 h |                10 h |     0.40 |              6 h |
+| HU-02               |                 5 h |                12 h |     0.42 |              7 h |
+| HU-03               |                 6 h |                15 h |     0.40 |              9 h |
+| HU-04               |                 3 h |                 8 h |     0.38 |              5 h |
+| **Total**           |            **18 h** |            **45 h** | **0.40** |         **27 h** |
 
-## Interpretación
-
-De acuerdo con la estimación realizada, las cuatro historias de usuario requieren aproximadamente **18 horas de actividades preventivas y de inspección**, mientras que una corrección posterior de los problemas podría representar aproximadamente **45 horas**.
-
-Por lo tanto, las actividades preventivas podrían evitar aproximadamente **27 horas de trabajo correctivo y validaciones** antes de considerar una historia como terminada.
+Los resultados muestran que las actividades de prevención permiten reducir el tiempo necesario para corregir errores durante el desarrollo.
 
 ---
 
 # 10. Adaptación a la Región Mixteca
 
-El contexto regional es un elemento importante del Plan de Calidad, debido a que el sistema estará orientado a artesanos que pueden trabajar bajo diferentes condiciones de infraestructura tecnológica.
+El sistema debe considerar las condiciones tecnológicas de la Región Mixteca.
 
-Por esta razón se consideran las siguientes situaciones:
-
-| Situación                              | Riesgo                      | Acción de calidad                      |
-| -------------------------------------- | --------------------------- | -------------------------------------- |
-| **Conectividad limitada**              | Interrupción de operaciones | Reducir cantidad de datos transferidos |
-| **Equipos con pocos recursos**         | Lentitud                    | Diseñar interfaces ligeras             |
-| **Diferentes conocimientos digitales** | Dificultad de uso           | Utilizar interfaces sencillas          |
-| **Errores de captura**                 | Información incorrecta      | Validar campos                         |
-| **Pérdida de información**             | Afectación del inventario   | Implementar mecanismos de respaldo     |
-| **Falta de experiencia técnica**       | Dificultad de mantenimiento | Documentar el sistema                  |
-| **Diferentes dispositivos**            | Problemas de visualización  | Realizar pruebas de compatibilidad     |
+| Situación                          | Riesgo                              | Acción de calidad                                 |
+| ---------------------------------- | ----------------------------------- | ------------------------------------------------- |
+| Conectividad limitada              | Pérdida de comunicación             | Optimizar el sistema para consumir pocos recursos |
+| Equipos de bajos recursos          | Bajo rendimiento                    | Reducir procesos innecesarios                     |
+| Diferentes conocimientos digitales | Dificultad para utilizar el sistema | Diseñar una interfaz sencilla                     |
+| Errores de captura                 | Información incorrecta              | Implementar validaciones                          |
+| Pérdida de información             | Datos incompletos                   | Utilizar mecanismos de respaldo                   |
+| Falta de experiencia técnica       | Dificultad de mantenimiento         | Documentar el sistema                             |
+| Diferentes dispositivos            | Problemas de compatibilidad         | Realizar pruebas en diferentes dispositivos       |
 
 ---
 
 # 11. Métricas de Calidad
 
-Para comprobar objetivamente la calidad del sistema se utilizarán las siguientes métricas.
-
 ## 11.1 Rendimiento
 
-**Fórmula:**
+**Tiempo promedio de respuesta = Tiempo total de respuesta ÷ Número de solicitudes**
 
-> Tiempo promedio = Σ tiempos de respuesta / número de pruebas
-
-**Meta:** ≤ 2 segundos en consultas principales.
+Meta: **≤ 2 segundos**.
 
 ## 11.2 Tasa de errores
 
-**Fórmula:**
+**Tasa de errores = Errores encontrados ÷ Pruebas realizadas × 100**
 
-> Tasa de errores = (Errores encontrados / Pruebas realizadas) × 100
+## 11.3 Cumplimiento de historias de usuario
 
-**Meta:** mantener una tasa de errores baja y corregir los errores críticos antes de liberar una funcionalidad.
-
-## 11.3 Cumplimiento de historias
-
-**Fórmula:**
-
-> Cumplimiento = (Historias aceptadas / Historias terminadas) × 100
-
-**Meta:** ≥ 95 %.
+Meta: **≥ 95 %**.
 
 ## 11.4 Cobertura de pruebas
 
-**Fórmula:**
+Meta: **≥ 90 %**.
 
-> Cobertura = (Funciones probadas / Funciones identificadas) × 100
+## 11.5 Incidentes críticos
 
-**Meta:** ≥ 90 %.
-
-## 11.5 Incidencias críticas
-
-**Meta:** 0 incidencias críticas pendientes al finalizar un Sprint.
+Meta: **0 incidentes críticos pendientes al finalizar el sprint**.
 
 ---
 
-# 12. Criterios de Aceptación de Calidad
+# 12. Criterios de Aceptación
 
 Una historia de usuario podrá considerarse terminada cuando:
 
-1. Cumpla con su descripción.
-2. Cumpla todos sus criterios de aceptación.
-3. Haya sido revisada por el equipo.
-4. Se hayan realizado las pruebas correspondientes.
-5. No presente errores críticos.
-6. Se encuentre registrada correctamente en GitHub.
-7. Se encuentre integrada con las demás funcionalidades cuando corresponda.
-8. La documentación necesaria esté actualizada.
+* Cumpla con los criterios de aceptación establecidos.
+* Haya sido revisada por el equipo.
+* Se hayan realizado las pruebas correspondientes.
+* No presente errores críticos.
+* Se encuentre registrada en GitHub.
+* Se encuentre integrada correctamente al proyecto.
+* La documentación correspondiente esté actualizada.
+* Existan evidencias de las pruebas realizadas.
 
 ---
 
-# 13. Uso de Inteligencia Artificial para la Auditoría de Calidad
+# 13. Auditoría mediante Inteligencia Artificial
 
-La Inteligencia Artificial se utilizará como herramienta de apoyo para revisar las historias de usuario y detectar posibles problemas antes de iniciar su desarrollo.
+La Inteligencia Artificial se utilizará como apoyo para revisar la calidad de las historias de usuario y detectar posibles problemas.
 
-La IA no sustituirá la decisión del equipo. Las sugerencias obtenidas serán revisadas por los integrantes y podrán ser **aceptadas, modificadas o rechazadas**.
+La IA podrá ayudar a:
 
-## 13.1 Prompt de auditoría de historias de usuario
+* Revisar historias de usuario.
+* Identificar criterios de aceptación incompletos.
+* Revisar métricas.
+* Detectar posibles riesgos.
+* Proponer mejoras.
 
-```text
-Actúa como auditor de calidad de software. Analiza la siguiente historia de usuario utilizando el formato Como/Quiero/Para. Identifica ambigüedades, requisitos incompletos, posibles errores, criterios de aceptación faltantes, riesgos de seguridad, problemas de usabilidad y aspectos relacionados con el contexto de conectividad limitada de la región Mixteca.
+La IA **no sustituye la decisión del equipo**. Las sugerencias podrán ser:
 
-Propón mejoras concretas y separa tus observaciones en: problemas detectados, propuesta de mejora y criterio de aceptación sugerido.
-```
+* Aceptadas.
+* Modificadas.
+* Rechazadas.
 
-## 13.2 Prompt para criterios de aceptación
-
-```text
-Analiza esta historia de usuario y genera criterios de aceptación verificables utilizando condiciones claras. Los criterios deben permitir comprobar mediante pruebas si la historia fue implementada correctamente. Considera usabilidad, rendimiento, seguridad y funcionamiento con conectividad limitada.
-```
-
-## 13.3 Prompt para métricas
-
-```text
-A partir de esta historia de usuario, propone métricas objetivas para evaluar su calidad. Incluye nombre de la métrica, fórmula, unidad de medida, meta y método de verificación.
-```
-
-## 13.4 Prompt para revisión de riesgos
-
-```text
-Analiza esta funcionalidad de un sistema de gestión comercial para artesanos de la región Mixteca. Identifica riesgos relacionados con conectividad, pérdida de información, errores de captura, seguridad, rendimiento y usabilidad.
-
-Para cada riesgo indica su posible impacto y una medida preventiva.
-```
+La decisión final será tomada por los integrantes del equipo.
 
 ---
 
 # 14. Registro de Auditoría de IA
 
-| Historia  | Aspecto revisado         | Resultado de IA                                                | Decisión del equipo |
-| --------- | ------------------------ | -------------------------------------------------------------- | ------------------- |
-| **HU-01** | Criterios de aceptación  | Se detectó necesidad de validar imágenes y datos del producto. | Aceptada            |
-| **HU-02** | Validación de inventario | Se recomendó validar cantidades y evitar valores negativos.    | Aceptada            |
-| **HU-03** | Seguridad                | Se recomendó validar datos de acceso y transacciones.          | Aceptada            |
-| **HU-04** | Reportes                 | Se recomendó definir datos mínimos necesarios.                 | Aceptada            |
+| Historia | Revisión realizada                               | Resultado |
+| -------- | ------------------------------------------------ | --------- |
+| HU-01    | Validación de información e imágenes             | Aceptada  |
+| HU-02    | Validación del inventario y cantidades negativas | Aceptada  |
+| HU-03    | Revisión de seguridad y transacciones            | Aceptada  |
+| HU-04    | Revisión de reportes y datos mínimos             | Aceptada  |
 
 ---
 
 # 15. Plan de Pruebas
 
-| Tipo de prueba               | Objetivo                                          | Responsable            | Momento                  |
-| ---------------------------- | ------------------------------------------------- | ---------------------- | ------------------------ |
-| **Prueba funcional**         | Comprobar que cada función opere correctamente    | Equipo                 | Durante desarrollo       |
-| **Prueba de usabilidad**     | Comprobar facilidad de uso                        | Equipo                 | Al finalizar cada módulo |
-| **Prueba de rendimiento**    | Medir tiempos de respuesta                        | Equipo                 | Antes de entrega         |
-| **Prueba de seguridad**      | Identificar vulnerabilidades básicas              | Equipo                 | Durante integración      |
-| **Prueba de compatibilidad** | Revisar funcionamiento en diferentes dispositivos | Equipo                 | Antes de entrega         |
-| **Prueba de aceptación**     | Verificar criterios de las historias              | Product Owner / equipo | Fin del Sprint           |
+| Tipo de prueba | Objetivo                                 | Responsable            | Momento                 |
+| -------------- | ---------------------------------------- | ---------------------- | ----------------------- |
+| Funcional      | Verificar las funciones del sistema      | Equipo                 | Durante el desarrollo   |
+| Usabilidad     | Comprobar facilidad de uso               | Equipo / Product Owner | Después de cada función |
+| Rendimiento    | Medir tiempos de respuesta               | Equipo                 | Durante las pruebas     |
+| Seguridad      | Detectar vulnerabilidades                | Equipo                 | Antes de la entrega     |
+| Compatibilidad | Comprobar funcionamiento en dispositivos | Equipo                 | Durante las pruebas     |
+| Aceptación     | Comprobar cumplimiento de requisitos     | Product Owner / Equipo | Al finalizar            |
 
 ---
 
 # 16. Gestión de Defectos
 
-Los errores encontrados se registrarán en el tablero del proyecto.
+Los defectos se clasificarán de acuerdo con su importancia.
 
-Se utilizarán las siguientes categorías:
+| Nivel   | Descripción                            | Acción                                  |
+| ------- | -------------------------------------- | --------------------------------------- |
+| Crítico | Impide utilizar una función importante | Corregir antes de finalizar la historia |
+| Alto    | Afecta una función importante          | Corregir prioritariamente               |
+| Medio   | Afecta parcialmente el funcionamiento  | Programar corrección                    |
+| Bajo    | Problema menor                         | Corregir cuando sea posible             |
 
-* **Crítico:** impide utilizar una función principal.
-* **Alto:** afecta considerablemente una función.
-* **Medio:** afecta parcialmente una función.
-* **Bajo:** problema visual o de poca afectación.
-
-Los defectos críticos deberán ser atendidos antes de considerar terminada la historia correspondiente.
+Los defectos críticos deberán corregirse antes de considerar terminada una historia de usuario.
 
 ---
 
 # 17. Control de Versiones y Documentación
 
-GitHub será utilizado como herramienta para mantener el control de versiones del proyecto.
+GitHub será utilizado como herramienta para administrar el código y la documentación del proyecto.
 
-Se deberán conservar:
+Se almacenarán:
 
 * Código fuente.
 * Historias de usuario.
@@ -373,65 +342,64 @@ Se deberán conservar:
 * Documentación.
 * Evidencias de pruebas.
 * Registro de cambios.
-* Archivos relacionados con la configuración del proyecto.
+* Configuraciones necesarias.
 
-Cada modificación importante deberá quedar identificada mediante un **commit** que permita conocer qué cambio fue realizado.
+Los cambios importantes deberán identificarse mediante **commits** descriptivos.
 
 ---
 
-# 18. Seguimiento mediante eduScrum
+# 18. Flujo eduScrum
 
-El Plan de Calidad se integrará al trabajo del equipo mediante el tablero eduScrum.
-
-Las actividades podrán organizarse mediante las siguientes etapas:
+El proyecto utilizará el siguiente flujo para organizar las actividades:
 
 **Propuestas → En estudio → Aprobada por el equipo → En desarrollo → En pruebas → Terminada**
 
-También podrá utilizarse una columna de **Descartadas** cuando una propuesta no sea viable para el proyecto.
+También se podrá utilizar una columna de:
 
-El tablero permitirá observar el avance de las actividades y detectar retrasos o problemas de calidad.
+**Descartadas**
+
+para aquellas propuestas que no sean seleccionadas por el equipo.
 
 ---
 
 # 19. Relación entre Calidad y Product Backlog
 
-Cada historia de usuario deberá contar con:
+Cada elemento del Product Backlog deberá considerar información relacionada con la calidad.
 
-1. Identificador.
-2. Descripción.
-3. Criterios de aceptación.
-4. Prioridad.
-5. Riesgos identificados.
-6. Actividades de prevención.
-7. Pruebas necesarias.
-8. Resultado de las pruebas.
-9. Estado de la historia.
-10. Evidencia de aceptación.
-
-Esto permitirá relacionar directamente el Plan de Calidad con el Product Backlog.
+| Elemento                  | Descripción                      |
+| ------------------------- | -------------------------------- |
+| ID                        | Identificador de la historia     |
+| Descripción               | Función solicitada               |
+| Criterios de aceptación   | Condiciones que debe cumplir     |
+| Prioridad                 | Importancia dentro del proyecto  |
+| Riesgos                   | Posibles problemas               |
+| Actividades de prevención | Acciones para evitar errores     |
+| Pruebas                   | Pruebas necesarias               |
+| Resultado                 | Resultado obtenido               |
+| Estado                    | Situación actual de la actividad |
+| Evidencia                 | Capturas, documentos o registros |
 
 ---
 
 # 20. Fuentes Externas y Complementarias
 
-Como apoyo para la elaboración del Plan de Calidad se consideran fuentes relacionadas con:
+Para complementar el Plan de Calidad se consideran fuentes relacionadas con:
 
-* CMMI y mejora de procesos de desarrollo de software.
-* MoProSoft y modelos de procesos para organizaciones de software.
+* CMMI.
+* MoProSoft.
 * Calidad de software.
 * Ingeniería de requisitos.
 * Pruebas de software.
-* Gestión de proyectos ágiles.
+* Gestión ágil de proyectos.
 * Open Source.
-* Documentación de Stellar y Drips para los aspectos relacionados con el proyecto.
-
-Las fuentes deberán registrarse en formato **APA** en la versión final del documento.
+* Stellar.
+* Drips.
 
 ---
 
 # 21. Evidencias de Calidad
 
-Como evidencia del cumplimiento del Plan de Calidad se conservarán:
+Las evidencias del cumplimiento del Plan de Calidad podrán incluir:
 
 * Historias de usuario revisadas.
 * Criterios de aceptación.
@@ -439,7 +407,7 @@ Como evidencia del cumplimiento del Plan de Calidad se conservarán:
 * Evidencias de pruebas.
 * Registro de errores.
 * Evidencias de GitHub.
-* Resultados de las métricas.
+* Resultados de métricas.
 * Registro de auditoría mediante IA.
 * Cálculos del Costo de la Calidad.
 * Revisiones realizadas por el equipo.
@@ -449,37 +417,28 @@ Como evidencia del cumplimiento del Plan de Calidad se conservarán:
 
 # 22. Responsabilidades del Equipo
 
-| Actividad                             | Responsable            |
-| ------------------------------------- | ---------------------- |
-| Revisión de historias de usuario      | Equipo                 |
-| Revisión mediante IA                  | Equipo                 |
-| Desarrollo                            | Equipo                 |
-| Pruebas                               | Equipo                 |
-| Control de versiones                  | Equipo                 |
-| Registro de errores                   | Equipo                 |
-| Seguimiento del tablero               | eduScrum Master        |
-| Validación de criterios de aceptación | Equipo / Product Owner |
-| Actualización del Plan de Calidad     | Equipo                 |
+| Responsable          | Actividades                                 |
+| -------------------- | ------------------------------------------- |
+| Equipo de desarrollo | Desarrollo, pruebas y corrección de errores |
+| Product Owner        | Revisión de requisitos y aceptación         |
+| eduScrum Master      | Organización y seguimiento del trabajo      |
+| Equipo               | Revisión de calidad y toma de decisiones    |
+| Equipo               | Registro de evidencias en GitHub            |
 
 ---
 
 # 23. Conclusiones
 
-El presente Plan de Calidad permite establecer una estrategia organizada para controlar la calidad del **Sistema de Gestión Comercial para Artesanías de Olla de Barro y Canastas Tejidas a Mano**.
+El Plan de Calidad permite establecer una guía para asegurar que el Sistema de Gestión Comercial para Artesanías de Olla de Barro y Canastas Tejidas a Mano cumpla con los requisitos definidos y mantenga un nivel adecuado de calidad.
 
-La adaptación de prácticas de CMMI y MoProSoft permite relacionar la gestión de requisitos, planificación, desarrollo, pruebas, medición y control de cambios con las actividades del proyecto **Open Hub Tec**.
+La integración de prácticas de CMMI y MoProSoft permite organizar las actividades de desarrollo, mientras que eduScrum facilita la organización y seguimiento del trabajo del equipo.
 
-El análisis del Costo de la Calidad muestra que invertir tiempo en prevención, revisión y pruebas puede reducir el esfuerzo necesario para corregir errores posteriormente.
+También se consideran las condiciones particulares de la Región Mixteca, como la conectividad limitada, los equipos de bajos recursos y los diferentes niveles de conocimiento tecnológico.
 
-Asimismo, la consideración del contexto de la región Mixteca permite que la calidad no se limite únicamente al funcionamiento técnico del software, sino que también considere aspectos como conectividad limitada, facilidad de uso, recursos tecnológicos disponibles y diferentes niveles de experiencia digital.
-
-Finalmente, el uso de Inteligencia Artificial como herramienta de apoyo para auditar historias de usuario, generar criterios de aceptación, identificar riesgos y proponer métricas fortalece el proceso de revisión.
+Finalmente, el uso de métricas, pruebas, control de defectos, GitHub y auditoría mediante IA permite contar con evidencias que ayuden a verificar el cumplimiento de los objetivos de calidad durante el desarrollo del proyecto.
 
 ---
 
-# 24. Bibliografía
-
-# Referencias
 # 24. Referencias
 
 * CMMI Institute. (2026, 25 de agosto). *CMMI model quick reference guide*. https://cmmiinstitute.com/resource-files/public/cmmi-model-quick-reference-guide
