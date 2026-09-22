@@ -479,14 +479,17 @@ Finalmente, el uso de Inteligencia Artificial como herramienta de apoyo para aud
 
 # 24. Bibliografía
 
-* CMMI Institute. (2026). *CMMI model quick reference guide*. CMMI Institute.
+# Referencias
+# 24. Referencias
 
-* Drips Network. (2026). *The protocol: Overview*. Drips Documentation.
+* CMMI Institute. (2026, 25 de agosto). *CMMI model quick reference guide*. https://cmmiinstitute.com/resource-files/public/cmmi-model-quick-reference-guide
 
-* GitHub. (2026). *GitHub documentation*. GitHub Docs.
+* Drips Network. (s. f.). *Overview*. Drips Docs. https://docs.drips.network/the-protocol/overview/
 
-* Stellar Development Foundation. (2026). *Stellar Community Fund handbook*.
+* GitHub. (s. f.). *GitHub Docs*. https://docs.github.com/es
 
-* Stellar Development Foundation. (2026). *Grants and funding*.
+* Oktaba, H., Alquicira Esquivel, C., Su Ramos, A., Martínez Martínez, A., Quintanilla Osorio, G., Ruvalcaba López, M., López Lira Hinojo, F., Rivera López, M. E., Orozco Mendoza, M. J., Fernández Ordóñez, Y., & Flores Lemus, M. A. (2003). *Modelo de Procesos para la Industria de Software (MoProSoft)*. Secretaría de Economía. https://www.red-tic.unam.mx/content/modelo-de-procesos-para-la-industria-de-software-moprosoft
 
-* Universidad Nacional Autónoma de México. (s. f.). *Modelo de Procesos para la Industria de Software (MoProSoft)*. Red de Responsables TIC – UNAM.
+* Stellar Development Foundation. (s. f.). *Grants and funding*. Stellar. https://stellar.org/grants-and-funding
+
+* Stellar Development Foundation. (s. f.). *Stellar Community Fund*. https://communityfund.stellar.org/
