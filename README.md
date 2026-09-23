@@ -1,10 +1,6 @@
 # PLAN DE CALIDAD DEL PROYECTO
 
-[![Plan de Calidad](https://img.shields.io/badge/Plan%20de%20Calidad-Proyecto-blue)](./PLAN_CALIDAD.md)
-
 ## Gestión de Proyectos de Software
-
-[![Gestión de Proyectos](https://img.shields.io/badge/Gesti%C3%B3n%20de%20Proyectos%20de%20Software-blue)](./PLAN_CALIDAD.md)
 
 **Proyecto:** Sistema de Gestión Comercial para Artesanías de Olla de Barro y Canastas Tejidas a Mano
 
@@ -53,10 +49,17 @@ Establecer los criterios, métricas, actividades y responsabilidades necesarias 
 
 ## Contenido del repositorio
 
-| Archivo / Carpeta                      | Descripción                                                     |
-| -------------------------------------- | --------------------------------------------------------------- |
-| [`PLAN_CALIDAD.md`](./PLAN_CALIDAD.md) | Plan de Calidad completo del proyecto                           |
-| `evidencias/`                          | Evidencias relacionadas con el cumplimiento del Plan de Calidad |
+| Archivo / Carpeta                                                                        | Descripción                                              |
+| ---------------------------------------------------------------------------------------- | -------------------------------------------------------- |
+| [`PLAN_CALIDAD.md`](./PLAN_CALIDAD.md)                                                   | Plan de Calidad completo del proyecto                    |
+| [`historias-usuario/historias-usuario.md`](./historias-usuario/historias-usuario.md)     | Historias de usuario y criterios de aceptación           |
+| [`metricas/metricas-calidad.md`](./metricas/metricas-calidad.md)                         | Métricas y criterios de calidad                          |
+| [`pruebas/plan-de-pruebas.md`](./pruebas/plan-de-pruebas.md)                             | Plan y casos de prueba                                   |
+| [`auditoria-ia/prompts-auditoria.md`](./auditoria-ia/prompts-auditoria.md)               | Prompts utilizados para la revisión mediante IA          |
+| [`auditoria-ia/registro-auditoria-ia.md`](./auditoria-ia/registro-auditoria-ia.md)       | Registro de las revisiones realizadas mediante IA        |
+| [`costo-calidad/costo-calidad-historias.md`](./costo-calidad/costo-calidad-historias.md) | Registro del Costo de la Calidad por historia de usuario |
+| [`evidencias/README.md`](./evidencias/README.md)                                         | Organización y descripción de las evidencias             |
+| [`evidencias/tablero-eduscrum.png`](./evidencias/tablero-eduscrum.png)                   | Captura del tablero eduScrum                             |
 
 ---
 
@@ -100,13 +103,13 @@ Se consideran procesos relacionados con:
 
 El flujo de trabajo utilizado para organizar las actividades es:
 
-**Propuestas → En estudio → Aprobada por el equipo → En desarrollo → En pruebas → Terminada**
+**Tareas/Propuestas → Revisión con IA → Aprobado por el equipo → En proceso → Terminada**
 
 También se considera la columna **Descartadas** para las propuestas que no sean seleccionadas.
 
 ### Inteligencia Artificial
 
-La IA se utilizará como herramienta de apoyo para:
+La IA se utiliza como herramienta de apoyo para:
 
 * Revisar historias de usuario.
 * Revisar criterios de aceptación.
@@ -114,18 +117,18 @@ La IA se utilizará como herramienta de apoyo para:
 * Revisar métricas.
 * Proponer mejoras.
 
-Las decisiones finales serán tomadas por el equipo.
+Las decisiones finales son tomadas por el equipo.
 
 ---
 
 ## Historias de Usuario
 
-| ID    | Historia                         |
-| ----- | -------------------------------- |
-| HU-01 | Registro y catálogo de productos |
-| HU-02 | Control de inventario            |
-| HU-03 | Registro de ventas               |
-| HU-04 | Reportes e impacto               |
+| ID    | Historia                          |
+| ----- | --------------------------------- |
+| HU-01 | Catálogo digital de artesanías    |
+| HU-02 | Control de inventario             |
+| HU-03 | Registro de ventas                |
+| HU-04 | Reportes e información de impacto |
 
 ---
 
@@ -146,6 +149,14 @@ Durante el desarrollo se recopilarán evidencias relacionadas con:
 
 ---
 
+## Estado de la documentación
+
+La documentación del proyecto se encuentra organizada en diferentes carpetas para facilitar su consulta y seguimiento.
+
+Las pruebas y sus evidencias se incorporarán conforme avance el desarrollo y se realicen las comprobaciones correspondientes.
+
+---
+
 ## Equipo
 
 **Integrantes:**
@@ -163,7 +174,7 @@ Durante el desarrollo se recopilarán evidencias relacionadas con:
 
 Para consultar el Plan de Calidad completo:
 
-➡️ **[Ver Plan de Calidad](./PLAN_CALIDAD.md)**
+➡️ [**Ver Plan de Calidad**](./PLAN_CALIDAD.md)
 
 ---
 
