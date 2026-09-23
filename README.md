@@ -60,6 +60,7 @@ Establecer los criterios, métricas, actividades y responsabilidades necesarias 
 | [`costo-calidad/costo-calidad-historias.md`](./costo-calidad/costo-calidad-historias.md) | Registro del Costo de la Calidad por historia de usuario |
 | [`evidencias/README.md`](./evidencias/README.md)                                         | Organización y descripción de las evidencias             |
 | [`evidencias/tablero-eduscrum.png`](./evidencias/tablero-eduscrum.png)                   | Captura del tablero eduScrum                             |
+| [`defectos/gestion-defectos.md`](./defectos/gestion-defectos.md) | Gestión y seguimiento de defectos del proyecto |
 
 ---
 
