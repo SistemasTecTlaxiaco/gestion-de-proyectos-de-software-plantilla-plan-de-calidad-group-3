@@ -1,10 +1,6 @@
 # PLAN DE CALIDAD DEL PROYECTO
 
-[![Plan de Calidad](https://img.shields.io/badge/Plan%20de%20Calidad-Proyecto-blue)](https://github.com/SistemasTecTlaxiaco/gestion-de-proyectos-de-software-plantilla-plan-de-calidad-group-2/blob/main/PLAN-CALIDAD.md#plan-de-calidad-del-proyecto)
-
 ## Gestión de Proyectos de Software
-
-[![Gestión de Proyectos](https://img.shields.io/badge/Gesti%C3%B3n%20de%20Proyectos%20de%20Software-blue)](https://github.com/SistemasTecTlaxiaco/gestion-de-proyectos-de-software-plantilla-plan-de-calidad-group-2/blob/main/PLAN-CALIDAD.md#gesti%C3%B3n-de-proyectos-de-software)
 
 **Proyecto:** Sistema de Gestión Comercial para Artesanías de Olla de Barro y Canastas Tejidas a Mano
 
@@ -24,10 +20,14 @@
 
 **Docente:** Ing. Roman Cruz José Alfredo
 
-**Integrantes:**
+---
 
-* Sandoval Hernández Edgar Axel – 22620093
-* Adriana Hernández Martínez – 22620083
+## Integrantes
+
+| Nombre                        | Número de control |
+| ----------------------------- | ----------------- |
+| Sandoval Hernández Edgar Axel | 22620093          |
+| Adriana Hernández Martínez    | 22620083          |
 
 ---
 
@@ -37,7 +37,7 @@ El presente Plan de Calidad establece los criterios, actividades, métricas y re
 
 El proyecto está orientado a apoyar a los artesanos de la Región Mixteca, principalmente en el registro de productos, control de inventario, registro de ventas y generación de información relacionada con sus actividades comerciales.
 
-El Plan de Calidad considera aspectos como la usabilidad, rendimiento, confiabilidad, seguridad, mantenibilidad, accesibilidad y adaptación al contexto regional.
+El Plan de Calidad considera aspectos como la usabilidad, rendimiento, confiabilidad, seguridad, mantenibilidad, accesibilidad y compatibilidad.
 
 También se integran prácticas de **CMMI**, **MoProSoft**, eduScrum y auditoría mediante Inteligencia Artificial (IA), con el propósito de organizar el desarrollo y facilitar la revisión de la calidad del proyecto.
 
@@ -57,6 +57,7 @@ Garantizar que el sistema cumpla con los requisitos establecidos y proporcione u
 * **Seguridad:** Proteger la información y evitar vulnerabilidades críticas.
 * **Mantenibilidad:** Mantener el código documentado y organizado para facilitar futuras modificaciones.
 * **Accesibilidad:** Permitir que diferentes usuarios puedan utilizar el sistema.
+* **Compatibilidad:** Procurar que el sistema funcione correctamente en diferentes dispositivos.
 * **Adaptación al contexto regional:** Considerar problemas como conectividad limitada, equipos de bajos recursos y diferentes niveles de conocimiento tecnológico.
 
 ---
@@ -77,6 +78,7 @@ El presente Plan de Calidad comprende las actividades relacionadas con:
 * Evaluación de métricas de calidad.
 * Evidencias de pruebas y aceptación.
 * Revisión del cumplimiento de las historias de usuario.
+* Seguimiento mediante eduScrum.
 
 El plan será aplicado durante las diferentes etapas del desarrollo del sistema.
 
@@ -84,15 +86,15 @@ El plan será aplicado durante las diferentes etapas del desarrollo del sistema.
 
 # 4. Criterios de Calidad
 
-| Criterio de calidad |                             Meta |
-| ------------------- | -------------------------------: |
-| Usabilidad          |                           ≥ 90 % |
-| Rendimiento         |                     ≤ 2 segundos |
-| Confiabilidad       |                           ≥ 95 % |
-| Seguridad           |      0 vulnerabilidades críticas |
+| Criterio de calidad | Meta                             |
+| ------------------- | -------------------------------- |
+| Usabilidad          | ≥ 90 %                           |
+| Rendimiento         | ≤ 2 segundos                     |
+| Confiabilidad       | ≥ 95 %                           |
+| Seguridad           | 0 vulnerabilidades críticas      |
 | Mantenibilidad      | 100 % de incidentes documentados |
-| Accesibilidad       |                           ≥ 90 % |
-| Compatibilidad      |                           ≥ 95 % |
+| Accesibilidad       | ≥ 90 %                           |
+| Compatibilidad      | ≥ 95 %                           |
 
 Estos criterios servirán como referencia para verificar el nivel de calidad alcanzado por el sistema.
 
@@ -147,19 +149,26 @@ La integración de estos modelos permite establecer una forma organizada de plan
 
 Las historias de usuario permiten definir las funciones principales que deberá cumplir el sistema y los criterios que se utilizarán para evaluar su calidad.
 
-## 7.1 HU-01: Catálogo de productos
+## 7.1 HU-01: Catálogo digital de artesanías
 
 **Como** artesano
-**Quiero** registrar y mostrar mis ollas de barro y canastas
-**Para** que los compradores puedan conocer los productos disponibles.
+**Quiero** registrar y mostrar mis ollas de barro y canastas tejidas
+**Para** que los compradores conozcan los productos disponibles.
 
-### Criterios de calidad
+### Criterios de aceptación
 
-* Registrar correctamente los datos del producto.
-* Permitir agregar imágenes.
-* Mostrar información clara.
-* Evitar pérdida de información.
-* Validar los datos antes de guardarlos.
+* Registrar el nombre, descripción y precio del producto.
+* Validar que los campos obligatorios estén completos.
+* Permitir consultar los productos registrados.
+* Mostrar la información de manera clara.
+* Conservar correctamente la información registrada.
+
+### Aspectos de calidad
+
+* Usabilidad.
+* Seguridad.
+* Rendimiento.
+* Confiabilidad.
 
 ---
 
@@ -169,13 +178,20 @@ Las historias de usuario permiten definir las funciones principales que deberá 
 **Quiero** controlar la cantidad de productos disponibles
 **Para** conocer mi inventario actual.
 
-### Criterios de calidad
+### Criterios de aceptación
 
-* Registrar entradas y salidas.
-* Actualizar las cantidades.
-* Evitar cantidades negativas.
-* Mostrar información actualizada.
-* Validar los datos registrados.
+* Registrar productos y cantidades disponibles.
+* Actualizar las cantidades del inventario.
+* Evitar que se registren cantidades negativas.
+* Mostrar la información del inventario de forma clara.
+* Conservar correctamente los cambios realizados.
+
+### Aspectos de calidad
+
+* Usabilidad.
+* Seguridad.
+* Rendimiento.
+* Confiabilidad.
 
 ---
 
@@ -185,28 +201,43 @@ Las historias de usuario permiten definir las funciones principales que deberá 
 **Quiero** registrar mis ventas
 **Para** llevar un control de mis transacciones.
 
-### Criterios de calidad
+### Criterios de aceptación
 
-* Registrar correctamente cada venta.
-* Validar los datos de la transacción.
-* Evitar duplicidad de registros.
-* Proteger la información.
-* Actualizar el inventario después de una venta.
+* Registrar correctamente una venta.
+* Validar los datos antes de guardar la información.
+* Conservar correctamente la información de la venta.
+* Actualizar el inventario cuando se registre una venta.
+* Evitar registros duplicados.
+
+### Aspectos de calidad
+
+* Usabilidad.
+* Seguridad.
+* Rendimiento.
+* Confiabilidad.
 
 ---
 
-## 7.4 HU-04: Reportes e impacto
+## 7.4 HU-04: Reportes e información de impacto
 
-**Como** artesano
-**Quiero** consultar reportes de mis ventas e inventario
-**Para** conocer el comportamiento de mi actividad comercial.
+**Como** responsable del proyecto
+**Quiero** generar información relacionada con productos, ventas e impacto
+**Para** facilitar el seguimiento y la transparencia del proyecto.
 
-### Criterios de calidad
+### Criterios de aceptación
 
-* Mostrar información correcta.
-* Generar reportes comprensibles.
-* Utilizar los datos registrados en el sistema.
-* Permitir consultar información histórica.
+* Consultar la información registrada.
+* Mostrar reportes de manera clara.
+* Verificar que los datos de los reportes coincidan con la información almacenada.
+* Permitir consultar productos y ventas.
+* Mostrar resultados que apoyen el seguimiento de la actividad del proyecto.
+
+### Aspectos de calidad
+
+* Usabilidad.
+* Rendimiento.
+* Confiabilidad.
+* Seguridad.
 
 ---
 
@@ -239,6 +270,10 @@ Estas fórmulas permiten comparar el tiempo utilizado para prevenir problemas co
 | **Total**           |            **18 h** |            **45 h** | **0.40** |         **27 h** |
 
 De acuerdo con estos datos, se consideran **18 horas de prevención** y **45 horas de corrección**, lo que representa un ahorro potencial de **27 horas** mediante actividades preventivas.
+
+El detalle del Costo de la Calidad se encuentra en:
+
+[`costo-calidad/costo-calidad-historias.md`](./costo-calidad/costo-calidad-historias.md)
 
 ---
 
@@ -276,15 +311,23 @@ Esta métrica permitirá conocer la cantidad de errores encontrados durante las 
 
 ## 11.3 Cumplimiento de historias de usuario
 
+**Cumplimiento = Historias de usuario terminadas ÷ Historias de usuario planificadas × 100**
+
 **Meta:** ≥ 95 %.
 
 ## 11.4 Cobertura de pruebas
+
+**Cobertura de pruebas = Casos de prueba ejecutados ÷ Casos de prueba planificados × 100**
 
 **Meta:** ≥ 90 %.
 
 ## 11.5 Incidentes críticos
 
 **Meta:** 0 incidentes críticos pendientes al finalizar el sprint.
+
+El detalle de las métricas se encuentra en:
+
+[`metricas/metricas-calidad.md`](./metricas/metricas-calidad.md)
 
 ---
 
@@ -295,7 +338,7 @@ Una historia de usuario podrá considerarse terminada cuando cumpla con las sigu
 * Cumplir con los criterios de aceptación establecidos.
 * Haber sido revisada por el equipo.
 * Haber realizado las pruebas correspondientes.
-* No presentar errores críticos.
+* No presentar errores críticos pendientes.
 * Encontrarse registrada en GitHub.
 * Estar integrada correctamente al proyecto.
 * Tener la documentación correspondiente actualizada.
@@ -323,44 +366,83 @@ La IA no sustituye la decisión del equipo. Las sugerencias generadas podrán se
 
 La decisión final será tomada por los integrantes del equipo.
 
+Los prompts y resultados de las revisiones se encuentran en:
+
+* [`auditoria-ia/prompts-auditoria.md`](./auditoria-ia/prompts-auditoria.md)
+* [`auditoria-ia/registro-auditoria-ia.md`](./auditoria-ia/registro-auditoria-ia.md)
+
 ---
 
 # 14. Registro de Auditoría de IA
 
-| Historia de Usuario | Revisión realizada                               | Resultado |
-| ------------------- | ------------------------------------------------ | --------- |
-| HU-01               | Validación de información e imágenes             | Aceptada  |
-| HU-02               | Validación del inventario y cantidades negativas | Aceptada  |
-| HU-03               | Revisión de seguridad y transacciones            | Aceptada  |
-| HU-04               | Revisión de reportes y datos mínimos             | Aceptada  |
+| Historia de Usuario | Revisión realizada                                  | Resultado |
+| ------------------- | --------------------------------------------------- | --------- |
+| HU-01               | Validación de información y criterios de aceptación | Aceptada  |
+| HU-02               | Validación del inventario y cantidades negativas    | Aceptada  |
+| HU-03               | Revisión de seguridad y transacciones               | Aceptada  |
+| HU-04               | Revisión de reportes y criterios de aceptación      | Aceptada  |
+
+Las revisiones se realizaron como apoyo al análisis del equipo.
 
 ---
 
 # 15. Plan de Pruebas
 
-| Tipo de prueba | Objetivo                                            | Responsable            | Momento                 |
-| -------------- | --------------------------------------------------- | ---------------------- | ----------------------- |
-| Funcional      | Verificar las funciones del sistema                 | Equipo                 | Durante el desarrollo   |
-| Usabilidad     | Comprobar facilidad de uso                          | Equipo / Product Owner | Después de cada función |
-| Rendimiento    | Medir tiempos de respuesta                          | Equipo                 | Durante las pruebas     |
-| Seguridad      | Detectar vulnerabilidades                           | Equipo                 | Antes de la entrega     |
-| Compatibilidad | Comprobar funcionamiento en diferentes dispositivos | Equipo                 | Durante las pruebas     |
-| Aceptación     | Comprobar cumplimiento de requisitos                | Product Owner / Equipo | Al finalizar            |
+Las pruebas permitirán verificar el funcionamiento del sistema y el cumplimiento de los criterios de aceptación.
+
+| Tipo de prueba | Objetivo                                            | Responsable | Momento                 |
+| -------------- | --------------------------------------------------- | ----------- | ----------------------- |
+| Funcional      | Verificar las funciones del sistema                 | Equipo      | Durante el desarrollo   |
+| Validación     | Comprobar los datos registrados                     | Equipo      | Durante el desarrollo   |
+| Usabilidad     | Comprobar facilidad de uso                          | Equipo      | Después de cada función |
+| Rendimiento    | Medir tiempos de respuesta                          | Equipo      | Durante las pruebas     |
+| Seguridad      | Detectar vulnerabilidades                           | Equipo      | Antes de la entrega     |
+| Confiabilidad  | Verificar conservación de información               | Equipo      | Durante las pruebas     |
+| Compatibilidad | Comprobar funcionamiento en diferentes dispositivos | Equipo      | Durante las pruebas     |
+| Aceptación     | Comprobar cumplimiento de requisitos                | Equipo      | Al finalizar            |
+
+Actualmente, los casos de prueba se encuentran documentados y **pendientes de ejecución**, ya que las pruebas se realizarán conforme avance el desarrollo.
+
+El detalle de los casos de prueba se encuentra en:
+
+[`pruebas/plan-de-pruebas.md`](./pruebas/plan-de-pruebas.md)
 
 ---
 
 # 16. Gestión de Defectos
 
-Los defectos se clasificarán de acuerdo con su importancia.
+Los defectos encontrados durante el desarrollo y las pruebas del sistema serán identificados, registrados y atendidos mediante un proceso de seguimiento.
 
-| Nivel   | Descripción                            | Acción                                  |
-| ------- | -------------------------------------- | --------------------------------------- |
-| Crítico | Impide utilizar una función importante | Corregir antes de finalizar la historia |
-| Alto    | Afecta una función importante          | Corregir prioritariamente               |
-| Medio   | Afecta parcialmente el funcionamiento  | Programar corrección                    |
-| Bajo    | Problema menor                         | Corregir cuando sea posible             |
+El proceso de gestión de defectos será:
+
+**Identificar → Registrar → Analizar → Corregir → Verificar → Cerrar**
+
+## 16.1 Clasificación de defectos
+
+| Prioridad | Descripción                                                                                      | Acción                       |
+| --------- | ------------------------------------------------------------------------------------------------ | ---------------------------- |
+| Alta      | El defecto impide utilizar una función importante o afecta información relevante.                | Corregir prioritariamente.   |
+| Media     | El defecto afecta una función, pero existe una alternativa para continuar utilizando el sistema. | Programar su corrección.     |
+| Baja      | El defecto tiene un impacto menor y no impide utilizar las funciones principales.                | Corregir cuando sea posible. |
+
+## 16.2 Estados de los defectos
+
+Los estados utilizados para dar seguimiento serán:
+
+**Abierto → En corrección → Verificado → Cerrado**
+
+* **Abierto:** el defecto fue identificado y registrado.
+* **En corrección:** se está trabajando en la solución.
+* **Verificado:** se comprobó que la corrección funciona correctamente.
+* **Cerrado:** el defecto fue solucionado y validado.
 
 Los defectos críticos deberán corregirse antes de considerar terminada una historia de usuario.
+
+Actualmente no se registran defectos encontrados sin evidencia, debido a que las pruebas todavía están pendientes.
+
+El registro detallado se encuentra en:
+
+[`defectos/gestion-defectos.md`](./defectos/gestion-defectos.md)
 
 ---
 
@@ -377,6 +459,7 @@ Se almacenarán:
 * Evidencias de pruebas.
 * Registro de cambios.
 * Configuraciones necesarias.
+* Evidencias del tablero eduScrum.
 
 Los cambios importantes deberán identificarse mediante **commits descriptivos**, permitiendo conocer las modificaciones realizadas durante el desarrollo.
 
@@ -386,15 +469,19 @@ Los cambios importantes deberán identificarse mediante **commits descriptivos**
 
 El proyecto utilizará el siguiente flujo para organizar las actividades:
 
-**Propuestas → Revicion con AI → Aprobada por el equipo → En proceso → Terminada**
+**Tareas/Propuestas → Revisión con IA → Aprobado por el equipo → En proceso → Terminada**
 
-También podrá utilizarse la columna:
+También se considera la columna:
 
 **Descartadas**
 
 para aquellas propuestas que no sean seleccionadas por el equipo.
 
 Este flujo permitirá visualizar el avance de las actividades y facilitará el seguimiento del trabajo.
+
+La evidencia del tablero se encuentra en:
+
+[`evidencias/tablero-eduscrum.png`](./evidencias/tablero-eduscrum.png)
 
 ---
 
@@ -453,6 +540,10 @@ Las evidencias del cumplimiento del Plan de Calidad podrán incluir:
 
 Las evidencias serán almacenadas y organizadas dentro del repositorio de GitHub.
 
+La organización de las evidencias se encuentra en:
+
+[`evidencias/README.md`](./evidencias/README.md)
+
 ---
 
 # 22. Responsabilidades del Equipo
@@ -469,7 +560,26 @@ Todos los integrantes deberán participar en las actividades de revisión y segu
 
 ---
 
-# 23. Conclusiones
+# 23. Estado del Plan de Calidad
+
+El Plan de Calidad se encuentra en proceso de desarrollo y actualización conforme avance el proyecto.
+
+Actualmente se cuenta con la documentación de:
+
+* Historias de usuario.
+* Métricas de calidad.
+* Plan de pruebas.
+* Auditoría mediante IA.
+* Costo de la Calidad.
+* Gestión de defectos.
+* Evidencias.
+* Organización del trabajo mediante eduScrum.
+
+Las pruebas y sus evidencias se incorporarán conforme avance el desarrollo y se realicen las comprobaciones correspondientes.
+
+---
+
+# 24. Conclusiones
 
 El Plan de Calidad permite establecer una guía para asegurar que el **Sistema de Gestión Comercial para Artesanías de Olla de Barro y Canastas Tejidas a Mano** cumpla con los requisitos definidos y mantenga un nivel adecuado de calidad.
 
@@ -481,7 +591,7 @@ Finalmente, el uso de métricas, pruebas, control de defectos, GitHub y auditor�
 
 ---
 
-# 24. Referencias
+# 25. Referencias
 
 * CMMI Institute. (2026, 25 de agosto). *CMMI model quick reference guide*. https://cmmiinstitute.com/resource-files/public/cmmi-model-quick-reference-guide
 
