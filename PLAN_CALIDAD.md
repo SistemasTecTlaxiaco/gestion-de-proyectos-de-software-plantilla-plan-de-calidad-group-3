@@ -386,7 +386,7 @@ Los cambios importantes deberán identificarse mediante **commits descriptivos**
 
 El proyecto utilizará el siguiente flujo para organizar las actividades:
 
-**Propuestas → En estudio → Aprobada por el equipo → En desarrollo → En pruebas → Terminada**
+**Propuestas → Revicion con AI → Aprobada por el equipo → En proceso → Terminada**
 
 También podrá utilizarse la columna:
 
